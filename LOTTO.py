@@ -3,7 +3,7 @@ import random
 def LOTTO_game():
     """
     Its console LOTTO game
-    Choose your numbers and try your luck!
+    Try your luck!
     :return: compare player cupon to lucky_cupon
     """
     print("Lotto Game")
@@ -36,6 +36,6 @@ def LOTTO_game():
                 print("Pick number!")
         print(f"Your cupon: {sorted(user_cupon)}")
     print(f"Win numbers: {sorted(lucky_cupon)}" )
-    return f'Your matching numbers {set(sorted(user_cupon)) & set(sorted(lucky_cupon))}' #compare user_cupon with_lucky
+    return f'Your matching numbers: {set(sorted(user_cupon)) & set(sorted(lucky_cupon))}' #compare user_cupon with_lucky
 
 print(LOTTO_game())
